@@ -1,12 +1,11 @@
 AOS.init();
 
-
 function cal(){
 
   var first = document.getElementById('p1');
   var second = document.getElementById('p2');
   var status = document.getElementById('status');
-  var breaks = document.getElementById('breaks');
+
 
   var f = Math.floor(Math.random() * 6) + 1;
   var s = Math.floor(Math.random() * 6) + 1;
@@ -15,10 +14,10 @@ function cal(){
 
   first.innerHTML = f;
   second.innerHTML = s;
-  status.innerHTML = "You Rolled = "+total+"."
+  status.innerHTML = "You Rolled = "+total+""
 
   if(f == s)
   {
-    breaks.innerHTML   += " DOUBLE! You get a free turn!!";
+    status.innerHTML   += " ,DOUBLE! You get a free turn!!";
   }
 }
