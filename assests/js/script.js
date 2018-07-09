@@ -1,7 +1,6 @@
 AOS.init();
 
 function cal(){
-
   var first = document.getElementById('p1');
   var second = document.getElementById('p2');
   var status = document.getElementById('status');
